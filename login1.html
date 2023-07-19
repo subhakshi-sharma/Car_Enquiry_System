@@ -1,0 +1,225 @@
+<html>
+
+	<head>
+		<title> LOGIN </title>
+		<style>
+			/* Full-width input fields */
+			input[type=text], input[type=password] 
+			{
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				box-sizing: border-box;
+			}
+
+			
+			/* Set a style for all buttons */
+			button 
+			{
+				background-color: #4CAF50;
+				color: white;
+				padding: 14px 20px;
+				margin: 8px 0;
+				border: none;
+				cursor: pointer;
+				width: 100%;
+			}
+
+			/* Extra styles for the cancel button */
+			.cancelbtn
+			{
+				padding: 14px 20px;
+				background-color: #f44336;
+			}
+
+			
+			
+			/* Float cancel and signup buttons and add an equal width */
+			.cancelbtn,.signupbtn 
+			{
+				float: left;
+				width: 50%;
+			}
+			
+			
+
+			/* Add padding to container elements */
+			.container 
+			{
+				padding: 16px;
+				
+			}
+			
+			
+
+			 Clear floats 
+			.clearfix::after 
+			{
+				content: "";
+				clear: both;
+				display: table;
+			}
+
+			
+			
+			/* Change styles for cancel button and signup button on extra small screens */
+			@media screen and (max-width: 300px) 
+			{
+			.cancelbtn, .signupbtn 
+				{
+					width: 100%;
+				}
+			}
+			
+			
+			
+			* {box-sizing: border-box;}
+				
+				
+			#login 
+			{
+				background-color: gray;
+				margin: 100px auto;
+				padding: 40px;
+				width: 70%;
+				border-radius:10px;
+				opacity: 0.8;
+				min-width: 300px;
+			}
+			
+			
+       
+			button
+				{
+					border-radius:12px;
+				}
+	   
+	   
+	   
+			.facebook 
+				{
+					background-color: #0079ce;
+					border: none;
+					border-radius: 0px 3px 3px 0px;
+					-moz-border-radius: 0px 3px 3px 0px;
+					-webkit-border-radius: 0px 3px 3px 0px;
+					color: #f4f4f4;
+					cursor: pointer;
+					height: 50px;
+					text-transform: uppercase;
+					width: 250px;
+					border-radius:12px;
+				}
+	   
+	   
+	   
+			.email 
+				{
+					background-color: red;
+					border: none;
+					border-radius: 0px 3px 3px 0px;
+					-moz-border-radius: 0px 3px 3px 0px;
+					-webkit-border-radius: 0px 3px 3px 0px;
+					color: #f4f4f4;
+					cursor: pointer;
+					height: 50px;
+					text-transform: uppercase;
+					width: 250px;
+					border-radius:12px;
+				}
+		
+
+			head
+				{
+					font-family:'georgia';
+				}
+				
+			/* #backcar	
+				{
+					background: url('file:///C:/Users/Subhakshi%20Sharma/Desktop/Lamborghini-Water-Car-HD-Wallpapers.jpg') no-repeat center center fixed; 
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+ 
+				}	*/
+				
+				
+		 </style>
+	</head>
+	
+	
+	
+	<body>
+		
+		
+		<div  style="background-color:black;height:130px;" >
+			<img src="image1.png" align="left"><br/><br/>
+			<div style="float: right; padding: 10px 100px;margin-top: 10px;margin-right: 16px;background:#ddd;font-size: 17px;border: none;cursor: pointer;background-color:black;"> 
+				<form action="/action_page.php">
+					<input type="text" placeholder="Search.." name="search">
+				</form>
+			</div>
+			<H1 style="color:white">CAR ENQUIRY SYSTEM</H1>
+		</div> 
+		
+		<div style="background-color:BLACK; height:50px;width:"> <br>
+			<a href="" style="hfont-size:30px;color:white;text-decoration:none;font-family:georgian">HOME</a>  
+			<a href="signup.html" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">REGISTRATION</a> 
+			<a href="LOGIN.HTML" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">LOGIN</a> 
+		    <a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">CAR ON RENT</a> 
+			<a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">TEST DRIVE</a> 
+			<a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">BOOKING</a> 
+			<a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">COMPARE CAR</a> 
+			<a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">FEEDBACK</a> 
+			<a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:30px;font-family:georgian">CONTACT US</a> 
+        </div> 
+		
+		
+		
+			<form action="action_page.php" style="border:1px solid #ccc" id="login">
+				<div class="container">
+					<h1 style="text-align:center;font-size:38px;">Login</h1>
+  
+					<label><b>Name</b></label>
+					<input type="text" placeholder="Enter Name" name="psw" required=""> 
+
+					<label><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required="">
+
+					<label><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required="">
+
+					<input type="checkbox" checked="checked"> Remember me
+    
+						<div class="clearfix">
+							<button type="reset" class="cancelbtn"> Forgot Password</button>
+							<button type="submit" class="signupbtn"> Login</button>
+	  
+								<p>
+									<a class="facebook-before"></a>
+									<button class="facebook">Login Using Facbook</button>
+								</p>
+		
+								<p>
+									<a class="twitter-before"></a>
+									<button class="email">Login Using EMAIL</button>
+								</p>
+   
+						</div>
+				</div>
+			</form>
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+</html>

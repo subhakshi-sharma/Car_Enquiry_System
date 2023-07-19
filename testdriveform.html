@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--link rel="stylesheet" type="text/css" href="style.css"-->
+		<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+		<style>
+			<style type="text/css">
+		
+		
+			
+            
+            
+            
+            
+            /* Full-width input fields */
+					input[type=text], input[type=password] 
+						{
+							width: 100%;
+							padding: 12px 20px;
+							margin: 8px 0;
+							display: inline-block;
+							border: 1px solid #ccc;
+							box-sizing: border-box;
+						}
+
+							
+					/* Set a style for all buttons */
+					button 
+						{
+							background-color: #4CAF50;
+							color: white;
+							padding: 14px 20px;
+							margin: 8px 0;
+							border: none;
+							cursor: pointer;
+							width: 100%;
+						}
+
+
+					
+					/* Extra styles for the cancel button */
+					.cancelbtn 
+						{
+							padding: 14px 20px;
+							background-color: #f44336;
+						}
+						
+					
+
+					/* Float cancel and signup buttons and add an equal width */
+					.cancelbtn,.signupbtn 
+						{
+							float: left;
+							width: 50%;
+						}
+
+					
+							
+					/* Add padding to container elements */
+					.container 
+						{
+							padding: 16px;
+						}
+				
+				
+
+					/* Clear floats */
+					.clearfix::after 
+						{
+							content: "";
+							clear: both;
+							display: table;
+						}
+					
+					
+
+					/* Change styles for cancel button and signup button on extra small screens */
+					@media screen and (max-width: 300px)
+						{
+							.cancelbtn, .signupbtn 
+								{
+									width: 100%;
+								}
+						}
+				
+				
+					/* SET signup in center */   
+					div
+						{
+							background-color:slateblue;
+							border-radius:4px;
+						} 	
+					
+					#signup 
+						{
+							background-color:blue;
+							
+							margin: 100px auto;
+							padding: 40px;
+							width: 70%;
+							border-radius:10px;
+							opacity:0.9;
+							min-width: 300px;
+						}
+					button
+						{
+							border-radius:12px;
+						}
+		 
+
+
+					.facebook 
+						{
+							background-color: #0079ce;
+							border: none;
+							border-radius: 0px 3px 3px 0px;
+							-moz-border-radius: 0px 3px 3px 0px;
+							-webkit-border-radius: 0px 3px 3px 0px;
+							color: #f4f4f4;
+							cursor: pointer;
+							height: 50px;
+							text-transform: uppercase;
+							width: 250px;
+							border-radius:12px;
+						}
+						
+						
+		   
+					.email
+						{
+							background-color: red;
+							border: none;
+							border-radius: 0px 3px 3px 0px;
+							-moz-border-radius: 0px 3px 3px 0px;
+							-webkit-border-radius: 0px 3px 3px 0px;
+							color: #f4f4f4;
+							cursor: pointer;
+							height: 50px;
+							text-transform: uppercase;
+							width: 250px;
+							border-radius:12px;
+						}
+			
+
+	   
+				head
+					{
+						font-family:'georgia';
+					}
+           
+				body
+					{ 
+						background: url('file:///C:/Users/Subhakshi%20Sharma/Desktop/Lamborghini-Water-Car-HD-Wallpapers.jpg') no-repeat center center fixed; 
+						-webkit-background-size: cover;
+						-moz-background-size: cover;
+						-o-background-size: cover;
+						background-size: cover;
+					}
+					
+				<!-- css fo white box-->
+				#tfnewsearch
+					{
+						float:right;
+						padding:20px;
+					}
+				.tftextinput
+					{
+						margin: 0;
+						padding: 5px 15px;
+						font-family: Arial, Helvetica, sans-serif;
+						font-size:14px;
+						border:1px solid #0076a3; border-right:0px;
+						border-top-left-radius: 5px 5px;
+						border-bottom-left-radius: 5px 5px;
+					}
+				.tfbutton 
+					{
+						margin: 0;
+						padding: 5px 15px;
+						font-family: Arial, Helvetica, sans-serif;
+						font-size:14px;
+						outline: none;
+						cursor: pointer;
+						text-align: center;
+						text-decoration: none;
+						color: #ffffff;
+						border: solid 1px #0076a3; border-right:0px;
+						background: #0095cd;
+						background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+						background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+						border-top-right-radius: 5px 5px;
+						border-bottom-right-radius: 5px 5px;
+					}
+				.tfbutton:hover
+					{
+						text-decoration: none;
+						background: #007ead;
+						background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+						background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+					}
+				/* Fixes submit button height problem in Firefox */
+				.tfbutton::-moz-focus-inner 
+					{
+						border: 0;
+					}
+				.tfclear
+					{
+						clear:both;
+					}
+            
+            
+            #first{
+                background-color:BLACK; 
+                height:50px;
+            }
+                    
+            #first>a:hover{
+             
+                color:red;
+            }
+	
+			</style>
+		</style>
+	</head>
+	
+	
+	
+	
+	<body>
+		<div class="tfclear">
+			<div  style="background-color:black;height:130px;" >
+				<img src="image1.png" align="left"><br/><br/>
+				<div id="tfheader"><H1 style="color:white; position:absolute;margin-left:130px">CAR ENQUIRY SYSTEM</H1>
+					<form id="tfnewsearch" method="get" action="" style="float:right">
+						<input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+					</form>
+				</div>			
+			</div>	
+		</div>
+		
+		
+		
+		<div id="first" > <br>
+			<a href="frontpage.html" style="hfont-size:30px;color:white;text-decoration:none;font-family:georgian">HOME</a>  
+			<a href="signup.html" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian;hover-color:red;">REGISTRATION</a> 
+			<a href="LOGIN.HTML" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">LOGIN</a> 
+		    <a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">CAR ON RENT</a> 
+			<a href="testdriveform.html" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">TEST DRIVE</a> 
+			<a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">BOOKING</a> 
+			<a href="" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">COMPARE CAR</a> 
+			<a href="feedbackform.html" style="hfont-size:30px;color:white;text-decoration:none;margin-left:60px;font-family:georgian">FEEDBACK</a> 
+			<a href="contactuspage.html" style="hfont-size:30px;color:white;text-decoration:none;margin-left:30px;font-family:georgian"><u>CONTACT US</u></a> 
+        </div> 
+        
+        
+     	 
+			<form action="/action_page.php" style="border:1px solid #ccc" id="signup">
+				<div class="container">
+					<h1 style="text-align:center;"><FONT SIZE="38PX">REQUEST FOR TEST DRIVE</FONT></h1>
+					
+					<label><b>Full Name</b></label><br><br>
+					<input type="text" placeholder="Enter Name" name="psw" required style="width:100%;height:50px"> <br> <br>
+					
+					<label><b>Date Of Birth</b></label>
+					<label class="month"> 
+						<select class="select-style" name="BirthMonth">
+							<option value="">Month</option>
+							<option  value="01">January</option>
+							<option value="02">February</option>
+							<option value="03" >March</option>
+							<option value="04">April</option>
+							<option value="05">May</option>
+							<option value="06">June</option>
+							<option value="07">July</option>
+							<option value="08">August</option>
+							<option value="09">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12" >December</option>
+						</select>
+					</label>
+                    
+					<label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
+					<label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label><br><br>
+					<label><b>Phone Number</b></label><br><br>
+					<input type="text" placeholder="Enter Phone Number" name="psw" required style="width:100%;height:50px">
+					<br><br>
+					<label><b>Salutation:</b></label>
+					<select class="select-style gender" name="gender">
+						<option value="select">Please Select</option>
+						<option value="m">Male</option>
+						<option value="f">Female</option>
+						<option value="others">Other</option>
+					</select>
+				
+					<br><br>
+						
+						<label style=""><b>Request For A Test Drive </b></label><br><br>						
+						
+						
+						
+						<select class="select-style" name="BirthMonth" style="width:100%;height:50px">
+							<option value="">Please Select Companies here....</option>
+							<option  value="01">MAHINDRA</option>
+							<option value="02">HYUNDAI</option>
+							<option value="03" >HONDA</option>
+							<option value="04">SUZUKI</option>
+							<option value="05">TOYOTA</option>
+							
+						</select>
+						
+						
+						</label><br><br>
+						
+						
+						
+					<label><b>Address</b></label><br><br>
+					<input type="text" placeholder="Enter Address" name="psw" required style="width:100%;height:50px"><br><br> 
+
+					<label><b>Email</b></label><br><br>
+					<input type="text" placeholder="Enter Email" name="email" required style="width:100%;height:50px"><br><br>
+					
+					
+					<label><b>Comment</b></label><br><br>
+								<textarea name="message" placeholder="Enter Your Comments" rows="10" cols="126"></textarea>
+								<br>
+								<br><br>
+
+					<p> By this I accept that, Company can use the data provided in this form for marketing purposes and can contact me using this data.*:.
+					</p>
+					<input type="checkbox" checked="checked">
+
+					<div class="clearfix">
+						<button type="reset" class="cancelbtn"> Reset</button>
+						<BUTTON type="submit" class="signupbtn"> Request a test drive</BUTTON>
+					
+						
+					
+					
+					</div>
+				</div>
+			</form>
+
+			
+			<div>
+				<footer style="background-color:black;margin-top:200px;height:150px;">
+					<center ><br><br><br><br><font color="white">© Copyright 2021, All Rights Reserved</font></center>
+				</footer>
+			</div>
+
+	</body>
+</html>  
